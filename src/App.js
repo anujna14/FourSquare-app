@@ -60,8 +60,8 @@ const NewDate = moment(new Date()).format("YYYYMMDD");
     
      getVenue=(query)=>{
        console.log(query)
-      const endpoint = 'https://api.foursquare.com/v2/venues/explore?'
-      const params = {
+       const endpoint = 'https://api.foursquare.com/v2/venues/explore?'
+        const params = {
         client_id: 'XXGWNF0H5YOXYM4B0NDXW5HWA1QZNFPUVQJF3VCMBUHLHQNE',
         client_secret: 'HOEFLV1HWOHMQHIGKASI10EZB2V32TRTRC1DWA1ESPMJ03HE',
         ll: this.state.latlong,

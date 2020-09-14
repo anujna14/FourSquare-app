@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 
 const client_id = "XXGWNF0H5YOXYM4B0NDXW5HWA1QZNFPUVQJF3VCMBUHLHQNE"
 const client_secret = "HOEFLV1HWOHMQHIGKASI10EZB2V32TRTRC1DWA1ESPMJ03HE"
+const NewDate = moment(new Date()).format("YYYYMMDD");
 
 class VenueDetails extends Component {
     state = {
@@ -14,7 +15,7 @@ class VenueDetails extends Component {
 
     componentDidMount = async()=>{
         const id = this.props.location.state.id;
-        const api_call = await fetch(`https://api.foursquare.com/v2/venues/${id}?client_id=${client_id}&client_secret=${client_secret}&v=20200901`)
+        const api_call = await fetch(`https://api.foursquare.com/v2/venues/${id}?client_id=${client_id}&client_secret=${client_secret}&v=${NewDate}`)
         const result = await api_call.json();
         this.setState({activeVenue: result.response.venue})
         console.log(this.state.activeVenue)
