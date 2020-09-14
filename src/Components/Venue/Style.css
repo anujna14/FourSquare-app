@@ -1,0 +1,193 @@
+body{
+    background-color: #e9eaed;    
+}
+
+#wrapper {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    overflow: auto;
+}
+.container{
+    background-color: #f5f5f5;  
+    padding-bottom: 15px;
+}
+
+.container.wrap {
+    width: 960px;
+}
+.container .contents {
+    padding-top: 221px;
+    
+}
+.venueInfoSection {
+    background-color: #fff;
+    position: relative;
+    border-radius: 1px solid blue;  
+}
+.venueInfoSection .topVenueSection {
+    line-height: 0;
+    padding: 20px;
+}
+
+.venueInfoSection .topVenueSection .mainIconWrapper {
+    border-radius: 3px;
+    background-color: #c7cdcf;
+    display: inline-block;
+    line-height: 0;
+    margin-right: 20px;
+    max-width: 88px;
+    overflow: hidden;
+}
+.venueInfoSection .topVenueSection .primaryInfo {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+    width: 512px;
+}
+.venueInfoSection .topVenueSection .primaryInfo .categories {
+    color: #959b9e;
+}
+.venueInfoSection .topVenueSection .primaryInfo.venueNameSection {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    padding : 5px 0;
+}
+.venueInfoSection .topVenueSection .primaryInfo .venueNameSection .venueName {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    display: inline-block;
+    color: blue;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 10px ;
+    letter-spacing: 1px;
+    justify-content: center; 
+   
+}
+
+.venueInfoSection .topVenueSection .primaryInfo .locationInfo {
+    color: #959b9e;
+}
+.photos{
+    padding:20px;
+}
+
+.photoWithContent{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+}
+.photoWithContent img{
+    padding: 2px;
+}
+.mainColumn {
+    display: inline-block;
+    width: 640px;
+    vertical-align: top;
+    padding: 5px;
+}
+.mainColumn .infoAddress{
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 20px;
+    padding-top: 5px;
+    box-shadow: #c7cdcf 0 1px 0 0;
+}
+.mainColumn .infoText{
+    padding: 5px;
+    color: blue;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.mainColumn .addressText , .hourText , .likedCategory{
+    padding: 5px;
+    color: rgba(73, 70, 70, 0.493);
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.addressInfo , .categoriesItem{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+
+}
+.contactInfo, .venueHours{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+}
+.openHours, .venueCategory{
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 20px;
+    padding-top: 5px;
+    box-shadow: #c7cdcf 0 1px 0 0;
+    width: 640px;
+}
+ span li{
+    list-style-type: none;
+    margin-left: 20px
+}
+.categoriesItem {
+    display: inline-block;
+
+}
+
+.categoriesItem + .categoriesItem::before {
+    display: inline-block;
+    white-space: pre;
+    content: ", ";
+  }
+.venueReview{
+    display: inline-block;
+    vertical-align: top;
+    width: 930px;
+    padding: 5px;
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 20px;
+    padding-top: 5px;
+    box-shadow: #c7cdcf 0 1px 0 0;
+}
+.userImage{
+    border-radius: 3px;
+    background-color: #c7cdcf;
+    display: inline-block;
+    line-height: 0;
+    margin-right: 20px;
+    max-width: 88px;
+    overflow: hidden;
+}
+.tipSection{
+    padding:20px;
+    border-bottom: 1px solid #ccc
+}
+
+.userInfo  {
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    vertical-align: top;
+    font-weight: bold;
+}
+.createdDate{
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+    color:#959b9e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
