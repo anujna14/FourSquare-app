@@ -26,7 +26,6 @@ class VenueDetails extends Component {
         return (
             <div>
                 <Header></Header>
-                <Form></Form>
             <div id = "wrapper" className = "wrapper">
             <div className = "container wrap"  > 
                 { 
