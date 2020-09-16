@@ -73,8 +73,8 @@ const NewDate = moment(new Date()).format("YYYYMMDD");
       axios.get(endpoint + new URLSearchParams(params))
       .then(response =>{
         this.setState({venues: response.data.response.groups[0].items})
-        console.log(response.data.response.groups[0].items)
-        console.log(this.state.venues)
+        //console.log(response.data.response.groups[0].items)
+       // console.log(this.state.venues)
       })
       .catch(error => {
         console.log(error)
@@ -88,8 +88,9 @@ const NewDate = moment(new Date()).format("YYYYMMDD");
       <React.Fragment>
       <Header></Header>
      {/* <Form  value={this.state.value} onChangeValue={this.handleChangeValue} getVenue = {this.getVenue}></Form>*/}
-      <Form getVenue = {this.getVenue}></Form>
-      <Venue venues = {this.state.venues}></Venue>
+      <Form getVenue = { this.getVenue }></Form>
+      <Venue venues = { this.state.venues }></Venue>
+      
       </React.Fragment>
     )
   }

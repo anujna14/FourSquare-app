@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import './Style.css';
-import Form from '../Form/Form';
 import * as moment from 'moment';
 import Header from '../Header/Header';
+
+
 
 const client_id = "XXGWNF0H5YOXYM4B0NDXW5HWA1QZNFPUVQJF3VCMBUHLHQNE"
 const client_secret = "HOEFLV1HWOHMQHIGKASI10EZB2V32TRTRC1DWA1ESPMJ03HE"
 const NewDate = moment(new Date()).format("YYYYMMDD");
 
 class VenueDetails extends Component {
+   
     state = {
         activeVenue: []
     }
-
     componentDidMount = async()=>{
+        console.log(this.props)
         const id = this.props.location.state.id;
         const api_call = await fetch(`https://api.foursquare.com/v2/venues/${id}?client_id=${client_id}&client_secret=${client_secret}&v=${NewDate}`)
         const result = await api_call.json();
@@ -22,7 +24,7 @@ class VenueDetails extends Component {
     }
     render() {
         const venue = this.state.activeVenue;
-        console.log(venue.hour)
+        console.log(venue)
         return (
             <div>
                 <Header></Header>

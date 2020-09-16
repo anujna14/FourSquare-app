@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 
 function Venue(props) {
+    console.log("#####")
+    console.log(props)
     return (
         <div className = "container">
                 <div className = "col-sm-4 sidebar">
