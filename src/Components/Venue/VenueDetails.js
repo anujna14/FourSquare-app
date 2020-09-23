@@ -27,7 +27,7 @@ class VenueDetails extends Component {
         console.log(venue)
         return (
             <div>
-                <Header></Header>
+                <Header/>
             <div id = "wrapper" className = "wrapper">
             <div className = "container wrap"  > 
                 { 

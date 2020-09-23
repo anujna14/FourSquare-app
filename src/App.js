@@ -86,10 +86,10 @@ const NewDate = moment(new Date()).format("YYYYMMDD");
   render() {
     return (
       <React.Fragment>
-      <Header></Header>
+      <Header/>
      {/* <Form  value={this.state.value} onChangeValue={this.handleChangeValue} getVenue = {this.getVenue}></Form>*/}
-      <Form getVenue = { this.getVenue }></Form>
-      <Venue venues = { this.state.venues }></Venue>
+      <Form getVenue = { this.getVenue }/>
+      <Venue venues = { this.state.venues }/>
       
       </React.Fragment>
     )
